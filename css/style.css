@@ -1,12 +1,53 @@
 
-body{ background: beige;}
-#para0{color: black; font-size: 30px; text-align: center; text-justify: auto;}
-.cv_profile{ text-align: center;}
-.bold{ font-weight: 700; font-size: 25px; text-transform: uppercase;  color: blue;  text-align: center;}
-.cv{ width: border-box; height: border-box; display: flex; margin: 0px auto; float: left;}
-.cv .left{width: 30%; background-color: cadetblue; padding-top: 8px; float: left;}
-.cv .left .all{  padding: 0 25px;}
-.skill_name{margin: 0;color: green;font-size: 18px;font-weight: 700;text-transform: uppercase;text-decoration: underline solid rgb(68, 68, 68);}
+body{ 
+    background: beige;
+}
+#pm1{
+    color: black; 
+    font-size: 30px; 
+    text-align: center; text-justify: auto;}
+.main{ 
+    text-align: left;
+    text-decoration: underline;
+}
+.first-title{ 
+    font-weight: 700;
+    font-size: 25px;
+    text-transform: uppercase;  
+    color: blue;  
+    text-align: center;
+    background-color: darkgrey;
+    }
+.resume{ 
+    width: border-box;
+    height: border-box; 
+    display: flex;
+    margin: 0px auto; 
+    float: left;
+    }
+.resume .first{
+    width: 30%;
+    background-color: cadetblue;
+    padding-top: 8px;
+    float: left;
+    }
+ .resume .second {
+    width: 70%;
+    background-color: beige;
+    padding:0px 25px;
+    float: left;
+}
+.resume .first .all{  
+    padding: 30px;
+}
+.main{
+    margin: 0;
+    color: green;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: underline solid rgb(68, 68, 68);
+}
 .per{
     color: black;
     text-align: justify;
@@ -17,33 +58,28 @@ body{ background: beige;}
     text-justify: auto;
     text-align: justify;
 }
-.cv .left ul li{
+.resume .first ul li{
     display: list-item;
     align-items: center;
     text-align: justify;
 }
-.cv .right {
-    width: 70%;
-    background-color: beige;
-    padding:0px 25px;
-    float: left;
-}
+
 .date{
     font-weight: 700;
     color: cadetblue;
 }
-.cv .right ul li{
+.resume .second ul li{
     display: list-item;
     align-items: center;
     text-align: justify;
 }
 
 @media screen and (min-width: 600px) and (max-width: 900px){
-   .cv{
+   .resume{
        flex-direction: column;
        border: 1px solid black;
     }
-    .cv .left, .cv .right{
+    .resume .first, .resume .second{
         width: auto;
     }
 
